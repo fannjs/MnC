@@ -1,0 +1,170 @@
+﻿.task-div
+{
+    border: 1px solid #DDD;
+    border-bottom-color: #CCC;
+    background-color: #EEE;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 2px 0px;
+}
+
+.task-div span:not(.taskName_disabled)
+{
+    padding-right: 8px;
+    vertical-align: top;
+}
+
+.task-div input[type="checkbox"]
+{
+    margin: 0px;
+}
+
+.removeTaskDivIcon,.deleteTaskBtn
+{
+    width: auto;
+    float: right;
+    cursor: pointer;
+    color: #DA3232;
+}
+.deleteTaskBtn
+{
+    color: #F00;
+
+}
+.selectTaskName,.selectRole{
+    padding: 2px 6px;
+    border: 1px solid #BBB;
+    color: #555;
+}
+
+.listOfTask
+{
+    padding-left: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.listOfTask li
+{
+    margin: 4px 0px;
+}
+.pStatus
+{
+    margin-left: 10px;
+    display: inline-block;
+}
+.greenDiv
+{
+    background-color: #3FB23D; 
+}
+
+.redDiv
+{
+    background-color: #FF2727;
+}
+
+.statusDiv
+{
+    padding: 8px;
+    color: #FFF;
+    width: 30px;
+    margin: 0px 2px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.taskName_disabled
+{
+    color: #30B57E;
+    font-weight: 600;
+}
+
+.permision-div > .disabled
+{
+    color: #BBB;
+}
+
+.ckmkRole
+{
+    padding: 4px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #EEE;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.taskName
+{
+    display:inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+#role-task-list-div
+{
+    position: absolute;
+    border: 1px solid #555;
+    background-color: #FFF;
+    border-radius: 2px;
+    z-index: 100;
+}
+#role-task-list-tbl
+{
+    width:490px;
+    border-top: 1px solid #CCC;
+}
+#role-task-list-tbl tbody
+{
+    max-height: 250px;
+    overflow:auto;
+    display:block;
+}
+#role-task-list-tbl thead tr,
+#role-task-list-tbl tbody tr
+{
+    display:block;
+}
+#role-task-list-tbl thead tr th
+{
+    padding: 4px;
+    background-color: #333;
+    color: #FFF;
+}
+#role-task-list-tbl thead tr th:nth-child(1),
+#role-task-list-tbl tbody tr td:nth-child(1)
+{
+    width: 250px;
+}
+#role-task-list-tbl thead tr th:nth-child(2),
+#role-task-list-tbl thead tr th:nth-child(3),
+#role-task-list-tbl thead tr th:nth-child(4),
+#role-task-list-tbl thead tr th:nth-child(5),
+#role-task-list-tbl tbody tr td:nth-child(2),
+#role-task-list-tbl tbody tr td:nth-child(3),
+#role-task-list-tbl tbody tr td:nth-child(4)
+{
+    width: 60px;
+}
+#role-task-list-tbl tbody tr:nth-child(odd)
+{
+    background-color: #EEE;
+}
+#role-task-list-tbl td
+{
+    padding: 4px;
+}
+#closeRoleTaskListDiv
+{
+    color: #CCC;
+    float:right;
+    margin-right: 5px;
+}
+#closeRoleTaskListDiv:hover
+{
+    cursor:pointer;
+    color: #555;
+}
+#closeRoleTaskListDiv > .fa
+{
+    width:auto;
+}

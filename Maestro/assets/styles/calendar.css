@@ -1,0 +1,208 @@
+﻿.calendar-selection
+{
+    padding:6px 8px;
+    border-color: #999;
+    color: #555;
+    background-color: #FDFDFD;
+}
+.calendar-selection:disabled
+{
+    opacity: 0.5;  
+}
+.new-calendar-btn
+{
+    padding: 5px 6px;
+    border: 1px solid;
+    margin-left: 1px;
+}
+#new-calendar-div > a
+{
+    padding-left: 4px;
+    cursor: pointer;
+}
+#save-new-calendar
+{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+#save-new-calendar:hover,
+#save-new-calendar:active,
+#save-new-calendar:focus
+{
+    color: #fff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+#cancel-new-calendar
+{
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+#cancel-new-calendar:hover,
+#cancel-new-calendar:active,
+#cancel-new-calendar:focus
+{
+    color: #fff;
+    background-color: #d2322d;
+    border-color: #ac2925;
+}
+#calendar-id-TF
+{
+    padding: 5px 8px;
+    border: 1px solid #999;
+    color:#555;
+    background-color: #FDFDFD;
+}
+#calendar 
+{
+    /*width: 900px;*/
+}
+#calendar .fc-content
+{
+	clear: none;
+}
+#show-holiday-list,
+#view-full-calendar
+{
+    border: 1px solid #CCC;
+    background: linear-gradient(#FFF,#EEE);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size:13px;
+    height: 32px;
+}
+#show-holiday-list:hover,
+#view-full-calendar:hover
+{
+	background: linear-gradient(#FCFCFC,#ECECEC);
+}
+#view-full-calendar
+{
+	float: right;
+	margin-bottom: 10px;
+}
+#setup-holiday-modal
+{
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+    overflow:auto;
+}
+#setup-holiday-bg
+{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#setup-holiday-main-div
+{
+	position: relative;
+    border-radius: 4px;
+    border: 1px solid #EEE;
+    padding: 15px;
+    background-color: #FCFCFC;
+    width:520px;
+    margin:50px auto;
+    box-shadow:0px 2px 8px 0px rgba(0, 0, 0, 1);
+}
+#selected-date
+{
+	font-weight: bold;
+	margin-left: 4px;
+}
+#setup-holiday-main-div > table 
+{
+	width: 100%;
+}
+#setup-holiday-main-div > table td
+{
+	padding: 12px;
+	vertical-align: top;
+}
+#setup-holiday-main-div > table td:first-child
+{
+	text-align: center;
+}
+.holiday-calendar-input
+{
+	width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #555;
+}
+.fc-day:hover
+{
+	background-color: #F6FEFF;
+}
+.fc-event:hover
+{
+	cursor:pointer;
+}
+.highlighted-cell
+{
+	background-color: #E3FCFF;
+}
+.national-holiday
+{
+    border-color: #1D59BE;
+    background-color: #2065D9;
+    color: #FFF;
+}
+.state-holiday
+{
+    border-color: #1A82A1;
+    background-color: #2296B9;
+    color: #FFF;
+}
+#holiday-description-tooltip
+{
+	position: absolute;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 8px 16px;
+    z-index: 10;
+    background-color: #FBFBFB;
+    box-shadow: 2px 2px 4px 1px;
+    color: #555;
+    font-size: 13px;
+    margin-top: 25px;
+    width: 200px;
+}
+#delete-holiday-btn
+{
+	float: right;
+}
+#holiday-list-table th
+{
+    color: #FFF;
+    background-color: #333;
+}
+#holiday-info-icons
+{
+    margin: 0px;
+    padding: 0px;
+}
+#holiday-info-icons li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 4px;
+}
+.info-icon
+{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 0px 4px;
+}
+#holiday-list-table td,
+#holiday-list-table th
+{
+    border: 1px solid #DDD;
+}

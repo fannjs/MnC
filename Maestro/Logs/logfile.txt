@@ -1,0 +1,12 @@
+26-06-2015 15:07:47: Object reference not set to an instance of an object. [dbconn.cs - connDB()]
+26-06-2015 15:11:10: Object reference not set to an instance of an object. [dbconn.cs - connDB()]
+02-07-2015 15:39:28: Cannot open database "CSDMS" requested by the login. The login failed.
+Login failed for user 'SSTAuto'. [dbconn.cs - connDB()]
+02-07-2015 15:39:39: Cannot open database "CSDMS" requested by the login. The login failed.
+Login failed for user 'SSTAuto'. [dbconn.cs - connDB()]
+19-08-2017 16:00:34: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) [dbconn.cs - connDB()]
+19-08-2017 16:00:38: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) [dbconn.cs - connDB()]
+19-08-2017 16:05:20: The entry 'MAESTRODB' has already been added. (D:\Gitlab\NEW\MaestroMonitoring\Maestro\web.config line 30) [dbconn.cs - connDB()]
+25-08-2017 16:01:43: Object reference not set to an instance of an object. [dbconn.cs - connDB_HTExp()]
+25-08-2017 16:03:33: Object reference not set to an instance of an object. [dbconn.cs - connDB_HTExp()]
+25-08-2017 16:06:57: Object reference not set to an instance of an object. [dbconn.cs - connDB_HTExp()]

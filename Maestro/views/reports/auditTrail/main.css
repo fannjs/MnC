@@ -1,0 +1,193 @@
+﻿.checkboxLabel
+{
+    font-weight: normal;
+}
+.checkboxLabel:hover
+{
+    cursor:pointer;
+}
+
+#pagination
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    float: left;
+    display:none;
+}
+#pagination > li
+{
+    cursor: pointer;
+}
+#pagination active
+{
+    cursor: default;
+}
+
+#tblAuditLog .fn-btn:hover
+{
+    text-decoration: underline !important;
+}
+
+
+#task-list-modal-wrapper 
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow:auto;
+}
+#task-list-modal-bg
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 800;
+}
+#task-list-modal
+{
+    width: 800px;
+    margin: 2em auto;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+#task-list-modal-header
+{
+    padding: 5px 10px;
+    background: linear-gradient(#FFF,#CCC);
+    border-bottom: 1px solid #B7B7B7;
+}
+#task-list-modal-header-title
+{
+    color: #000;
+    font-size: 16px;
+}
+#task-list-modal-header-close
+{
+    float:right;
+}
+#task-list-modal-header-close > .fa
+{
+    width: auto;
+}
+#task-list-modal-header-close:hover
+{
+    cursor:pointer;
+}
+#task-list-modal-body
+{
+    position: relative;
+    min-height: 200px;
+}
+#task-list-modal-loader
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#task-list-modal-footer
+{
+    padding: 4px;
+}
+#task-list-modal-footer > button
+{
+    margin:4px;
+}
+.form-table
+{
+    width: auto;
+}
+.form-table td
+{
+    vertical-align: top;
+    padding: 4px;
+}
+.form-table tr > td:first-child
+{
+    font-weight: bold;
+    text-align: right;
+}
+.spanColon
+{
+    padding-left: 10px;
+}
+.radioBtnLabel
+{
+    font-weight: normal;
+}
+.radioBtnLabel:hover
+{
+    cursor: pointer;
+}
+#taskList-Textarea-Remark
+{
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px solid #CCC;
+    resize: none;
+}
+#old-new-data-div
+{
+    background-color: #EEE;
+    padding: 8px 4px;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+#old-new-data-div > table > tbody > tr > td > div
+{
+    padding: 8px;
+}
+#old-new-data-div > div
+{
+    border-left: 1px solid #DDD;
+}
+#old-new-data-div > table > tbody > tr > td > div .form-table td:first-child
+{
+    width: 40%;
+    text-align: left;
+}
+#old-new-data-div > table > tbody > tr > td > div .form-table td:last-child
+{
+    width: 60%;
+}
+#old-new-data-div > table > tbody > tr > td > div .form-table td
+{
+    word-wrap: break-word;
+}
+#old-new-data-div > table > tbody > tr > td > div .form-table
+{
+
+}
+#old-new-data-div > table 
+{
+    width:100%;
+}
+#old-new-data-div > table > tbody > tr > td
+{
+    vertical-align:top;
+    width: 50%;
+}
+#old-new-data-div > table > tbody > tr > td:nth-child(2)
+{
+    border-left: 1px solid #DDD;
+}
+.mkck-thumbnail-div
+{
+    margin: 1px 0px;
+}
+.mkck-thumbnail
+{
+    width: 150px;
+    height: 138px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}

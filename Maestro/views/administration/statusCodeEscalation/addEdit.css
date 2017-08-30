@@ -1,0 +1,207 @@
+﻿#modal-wrapper
+{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    overflow: auto;
+        
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+#modal-wrapper .modal-dialog
+{
+    width: 800px;
+    margin: 2em auto;   
+    background-color: #FFF;    
+    border-radius: 2px;
+    border: 1px solid #EEE; 
+    box-shadow: 0px 8px 20px 0px;
+}
+#modal-wrapper .modal-dialog .modal-header
+{
+    padding:8px;
+    border-bottom: 1px solid #DDD;
+    
+}
+.modal-header .modal-title
+{
+    font-size: 16px;
+}
+.modal-header .modal-close-btn
+{
+    float:right;
+    color: #000;
+    opacity: 0.5;
+        
+    transition: opacity ease-in-out 0.25s;
+    -webkit-transition: opacity ease-in-out 0.25s;
+}
+.modal-header .modal-close-btn:hover
+{
+    cursor:pointer;
+    opacity: 0.8;
+}
+.modal-header .modal-close-btn:active
+{
+    opacity: 1;
+}
+#userListMainDiv > div, #statusCodesMainDiv > div
+{
+    padding: 8px;
+}
+#userListMainDiv .container-title, #statusCodesMainDiv .container-title
+{
+    font-size: 16px;
+    color: #999;
+}
+#userListDiv, #statusCodesDiv
+{
+    overflow: auto;
+    min-height: 140px;
+    padding: 10px 0px;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+#userListDiv .a-user, #statusCodesDiv .a-code
+{
+    display: inline-block;
+    padding: 2px 12px;
+    border: 1px solid #ddd;
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    margin: 0px 4px 4px 0px;
+}
+#userListDiv .a-user:hover, #statusCodesDiv .a-code:hover
+{
+    cursor:pointer;
+}
+#userListDiv .a-user.selected, #statusCodesDiv .a-code.selected
+{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+    font-weight: bold;
+}
+#userListDiv .a-user.selected.disabled, #statusCodesDiv .a-code.selected.disabled
+{
+    opacity: 0.6;
+    cursor: default;
+}
+    
+.item-listing-container
+{
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid #999;
+    background-color: #F4f4f4;
+    height: 150px;
+    overflow: auto;
+        
+    vertical-align: top;
+}
+.item-listing-container .item-listing
+{
+    border: 1px solid #7B97BC;
+    background-color: #A9BFDC;
+    border-radius: 2px;
+    padding: 0px 4px;
+    color: #135FC4;
+    font-size: 14px;
+    position: relative;
+}
+.item-listing-container .item-listing:hover
+{
+    background-color: #96B5DE;
+}
+.item-listing-container .item-listing:not(:last-child)
+{
+    margin-bottom: 2px;
+}
+.item-listing-container .remove-btn
+{
+    color: #555;
+    opacity: 0.7;
+    position: absolute;
+    left: calc(100% - 17px);
+    top:0px;
+        
+    transition: opacity ease-in-out 0.25s;
+    -webkit-transition: opacity ease-in-out 0.25s;
+}
+.item-listing-container .remove-btn:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item-listing-container .remove-btn:active
+{
+    opacity: 1;
+}
+.item-listing-container .remove-btn .fa
+{
+    width: auto;
+}
+
+#detailed-tooltip
+{
+    position: fixed;
+    border-radius: 3px;
+    padding: 8px;
+    z-index: 9999;
+    background-color: #FFF;
+    margin-left: -30px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd #ccc #bbb;
+}
+.highlighted-text
+{
+    padding: 4px 8px;
+    color: #316CE5;
+    font-weight: bold;
+}
+.description-text
+{
+    padding: 4px 8px;
+    color: #0091FF;
+    display:block;
+}
+
+.filterOption
+{
+    padding-left: 6px;
+    opacity: 0.3;
+}
+.filterOption:hover
+{
+    cursor:pointer;
+    opacity:0.5;
+}
+.filterOption.selected
+{
+    opacity: 1;
+    color: Blue;
+    font-weight: 600;
+}
+.filterOption.disabled
+{
+    opacity:0.3;
+}
+.filterOption.disabled:hover
+{
+    cursor:default;
+}
+
+
+.escalation-status-code:hover
+{
+    cursor:default;
+}

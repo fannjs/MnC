@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{782CF999-9E23-4979-9579-D4440E17E546}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HolidayFileModule</RootNamespace>
+    <AssemblyName>HolidayFile</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RototypeIntl.Database, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\RototypeIntl.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agent\HolidayAgent.cs" />
+    <Compile Include="assets\db\AbstractDataLayer.cs" />
+    <Compile Include="assets\db\ConsoleServer\SetupCalendarDataLayer.cs" />
+    <Compile Include="assets\db\ConsoleServer\SpecialDayOfWeekDataLayer.cs" />
+    <Compile Include="assets\db\Kiosk\HolidayCalendarDataLayer.cs" />
+    <Compile Include="assets\db\Kiosk\DayOfWeekDataLayer.cs" />
+    <Compile Include="assets\entity\HolidayCalendar.cs" />
+    <Compile Include="assets\db\ConsoleServer\HolidayCalendarDataLayer.cs" />
+    <Compile Include="assets\entity\SeDayOfWeek.cs" />
+    <Compile Include="assets\entity\SpecialDayOfWeek.cs" />
+    <Compile Include="assets\facade\HolidayCalendarFacade.cs" />
+    <Compile Include="assets\entity\SetupCalendar.cs" />
+    <Compile Include="assets\facade\HolidayFacade.cs" />
+    <Compile Include="assets\facade\SetupCalendarFacade.cs" />
+    <Compile Include="assets\facade\SpecialDayOfWeekFacade.cs" />
+    <Compile Include="assets\entity\Holiday.cs" />
+    <Compile Include="assets\utility\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="generator\Generator.cs" />
+    <Compile Include="generator\GeneratorAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reader\Reader.cs" />
+    <Compile Include="reader\ReaderAction.cs" />
+    <Compile Include="assets\Status.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\RototypeIntl.Database.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\entity\kiosk\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

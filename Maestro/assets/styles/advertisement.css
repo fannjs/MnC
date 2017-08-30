@@ -1,0 +1,149 @@
+﻿
+#advertisement-upload-div
+{
+    padding-bottom: 10px;
+}
+#advertisement-upload-btn-section
+{
+    border: 1px solid #CCC;
+    background-color: #FCFCFC;
+    border-radius: 6px;
+    padding: 20px 8px 10px 14px;
+}
+#total-uploaded-files
+{
+    padding: 0px 12px;
+    color: #555;
+    border: 1px solid #CCC;
+}
+#browse-btn
+{
+    position: relative;
+    display: inline-block;
+    padding: 0px 12px;
+    color: #E1751A;
+    background-color: #fff;
+    border: 1px solid #CCC;
+    margin-left: -4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#upload-btn
+{
+    position: relative;
+    display: inline-block;
+    padding: 0px 8px;
+    color: #E1751A;
+    background-color: #fff;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+#browse-btn:hover,
+#upload-btn:hover
+{
+    background-color:#FCFCFC;
+    cursor:pointer;
+}
+#image-uploader
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.image-uploaded
+{
+    height: 176px;
+}
+.image-wrapper
+{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    /*position: relative;*/ 
+    display:inline-block;
+    width: 176px;
+    
+}
+.image-wrapper-header
+{
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-color: #FCFCFC;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #555;
+    height: 24px;
+    word-break: break-word;
+    padding: 0px 8px;
+}
+.image-wrapper-body
+{
+    height: 128px;
+    width: 176px;
+    border: 1px solid #CCC;
+    border-top: none;
+}
+.image-div
+{
+    width: 100%;
+    height: 100%;
+}
+.image-wrapper-footer
+{
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #FCFCFC;
+    padding: 0px 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.image-wrapper-footer .fa
+{
+    cursor: pointer;
+    width: auto;
+    margin-right: 8px;
+}
+#advertisement-seq > ul
+{
+    padding:8px 0px;
+    margin:0px;
+}
+#advertisement-seq > ul li
+{
+    display: inline-block;
+}
+.seq-img
+{
+    float: left;
+    height: 152px;
+}
+.seq-img:hover
+{
+    cursor: -webkit-grab;
+}
+.remove-seq-img
+{
+    color: red;
+    position: absolute;
+    margin-left: -13px;
+    margin-top: -12px;
+}
+.remove-seq-img > .fa
+{
+    width: auto;
+}
+.remove-seq-img:hover
+{
+    cursor:pointer;
+}
+.seq-placeholder {
+    border: none;
+    height: 148px;
+    width: 148px;
+}

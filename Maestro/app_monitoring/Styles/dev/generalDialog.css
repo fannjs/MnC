@@ -1,0 +1,82 @@
+﻿    .hidden
+	{
+		display: none;
+	}
+
+
+	#tblAddError, #tblErrorCodes{
+		width: 550px;
+	}
+
+	#tblAddError input[type=text],
+	#tblAddError select
+	{
+		width: 90%;
+	}
+
+	.theader {
+		font-weight: bolder;
+		color: #366586;
+		background-color: #BCEAFE;
+	}
+
+	.tBorder {
+		border:groove rgb(221,216,216) 1px;
+	}
+
+	.tMargin {
+		margin-bottom: 10px;
+		padding-right: 20px;
+	}
+	a.blueSubLink {
+		display: inline-block;
+		margin-bottom: 2px;
+		font-size: 10px;
+	}
+
+	a.blueSubLink,
+	a.blueSubLink:visited{
+		text-decoration: none;
+		color: #06F;
+	}
+
+	a.blueSubLink:hover{
+		text-decoration: underline;
+		color: black;
+	}
+
+
+	#divAddError input[type=button] {
+		border:1px solid #cccccc;
+		background:#F7F7F7;
+		font-size:10px;
+		color:#528BC0;
+		padding: 1px 6px;
+	}
+
+	fieldset {
+		padding:5px 5px 5px 5px;
+		margin:5px 5px 5px 5px;
+		border:1px solid #dddddd;
+	}
+    legend{
+		color: #06F;
+		font-size: 12px;
+
+    }
+
+	input[type=button] {
+		border:1px solid #cccccc;
+		background:#F7F7F7;
+		color:#528BC0;
+		padding: 1px 6px;
+	}
+
+    #dlgAddNewMachineType,
+    #dlgAEVErrorCodes {
+         overflow: auto;
+    }
+
+	.smallButtonFont{
+		font-size:10px !important;
+	}

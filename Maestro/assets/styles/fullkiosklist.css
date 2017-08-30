@@ -1,0 +1,67 @@
+﻿#full-kiosk-list-table
+{
+    width: 100%;
+}
+#full-kiosk-list-table > thead > tr > th
+{
+    padding: 8px;
+    border: 1px solid #333;
+    background-color: #000;
+    color: #FFF;
+}
+#full-kiosk-list-table td
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+#pagination
+{
+    margin-top: 0px;
+    float: left;
+}
+#pagination > li
+{
+    cursor: pointer;
+}
+#pagination active
+{
+    cursor: default;
+}
+#print-button
+{
+    padding: 4px 8px;
+    margin-right:8px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    border-radius: 4px;
+    float:left;
+}
+#print-button:hover
+{
+    background-color: #FCFCFC;
+}
+#selection-div
+{
+    margin-bottom: 20px;
+    float: right;
+    font-size: 14px;
+    color: #555;
+}
+#record-per-page
+{
+    margin: 0px 5px;
+    padding: 5px 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+#page-footer
+{
+    margin-top: 20px;
+    text-align: right;
+}
+#page-information
+{
+    color: #000;
+    opacity: 0.5;
+    font-size: 14px;
+}

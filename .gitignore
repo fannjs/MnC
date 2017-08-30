@@ -1,0 +1,5 @@
+.nuget/
+.svn/
+Maestro/obj/
+Maestro/bin/
+packages/

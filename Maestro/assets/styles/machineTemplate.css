@@ -1,0 +1,365 @@
+﻿#errorCode-modal .modal-header{
+	background: linear-gradient(to bottom, #FFFFFF 0%, #EEEEEE 100%);
+	color: #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+#errorCode-modal .modal-dialog{
+	width: 1000px;
+}
+#errorCode-modal .modal-content{
+	border-radius: 0;
+}
+
+#errorCode-modal .modal-body{
+	padding-top: 10px 
+}
+
+#errorCode-modal .modal-body .tab-content{
+	margin-top: 15px;
+}
+#tblErrorCodes,#tblCodeCategory
+{
+    width: 958px;
+}
+.table-scrollable
+{
+    border: 1px solid #999;
+}
+.table-scrollable > thead tr,
+.table-scrollable > tbody tr
+{
+    display: block;
+}
+
+.table-scrollable > thead
+{
+    background-color: #333;
+    color: #FFF;
+}
+#tblErrorCodes > thead th:hover
+{
+    cursor: pointer;
+    color: #EEE;
+}
+.table-scrollable > thead th,
+.table-scrollable > tbody td
+{
+    padding: 2px 4px;
+}
+.table-scrollable > tbody
+{
+    display: block;
+    max-height: 262px;
+    overflow: auto;
+    width: 100%;
+}
+.table-scrollable > thead tr th:nth-child(1),
+.table-scrollable > thead tr th:nth-child(3),
+.table-scrollable > thead tr th:nth-child(4),
+.table-scrollable > tbody tr td:nth-child(1),
+.table-scrollable > tbody tr td:nth-child(3)
+{
+    width: 136px;
+}
+.table-scrollable > thead tr th:nth-child(2),
+.table-scrollable > tbody tr td:nth-child(2)
+{
+    width: 550px;
+}
+.table-scrollable > tbody > tr:nth-child(odd):not(.active-td)
+{
+    background-color: #F3F3F3;
+}
+.table-scrollable > tbody > tr:nth-child(even):not(.active-td)
+{
+    background-color: #FCFCFC;
+}
+.table-scrollable > tbody tr:hover:not(.active-td):not(.emptyTableMsg)
+{
+    cursor: pointer;
+    background-color: rgba(0, 153, 153, 0.1);
+}
+.emptyTableMsg
+{
+    text-align: center;
+}
+/* Sensor (Arrow) */
+.right-arrow,
+.left-arrow {
+	width:30px;
+}
+.left-line {
+	margin-top:5px;
+	width:15px;
+	background:red;
+	height:10px;
+	float:right;
+}
+.left-point {	
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 15px solid red;
+	float:left;
+}
+.right-line {
+	margin-top:5px;
+	width:15px;
+	background:red;
+	height:10px;
+	float:left;
+}
+.right-point {	
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 15px solid red;
+	float:right;
+}
+.up-arrow,
+.down-arrow{
+	height: 30px;
+}
+.up-line {
+	height:15px;
+	background:red;
+	width: 10px;
+	margin-left: 5px;
+}
+.up-point {	
+	border-bottom: 15px solid red;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.down-line {
+	margin-left:5px;
+	height:15px;
+	background:red;
+	width:10px;
+}
+.down-point {	
+	border-top: 15px solid red;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+}
+#containment-wrapper .dropped-arrow{
+	animation:blink 0.7s infinite;
+	-webkit-animation: blink 0.7s infinite; /* Safari and Chrome */
+}
+@keyframes blink
+{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes blink  /*Safari and Chrome */ 
+{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+#close-edit-code-div{
+	cursor: pointer;
+}
+#edit-sensor-tab table td{
+	font-size: 14px;
+}
+.active-td{
+	background-color: #009999;
+	color: #fff;
+}
+.active-td:hover
+{
+	cursor: default;
+}
+.active-td a{
+	color: #fff;
+}
+.active-td .view-sop
+{
+	color: #FFF;
+}
+.view-sop
+{
+	color: #3A89DB;
+}
+.view-sop:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
+#sop-tooltips
+{
+	position: absolute;
+	margin-top: 30px;
+	padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #FFFFFE;
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.8);
+    color: #555;
+    z-index: 10;
+}
+#sop-tooltips:hover
+{
+	cursor: auto;
+}
+/* Img CSS */	
+.imgwrapper {
+    border: 1px #CCC solid;
+    position: relative;
+    height: 120px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #FCFCFC;
+}
+.imgwrapper:before
+{
+    content: "No Image";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -29px;
+    margin-top: -11px;
+    color: #CCC;
+}
+.fit {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#fBrowseImage {
+    cursor: pointer;
+    opacity:0;
+}
+.mtLinkBtn
+{
+    transition: color ease-in-out 0.25s, text-decoration ease-in-out 0.25s;
+}
+.mtLinkBtn:hover
+{
+    text-decoration: underline !important;
+    color: #0F46AA;
+    cursor:pointer;
+}
+
+#addEditCC
+{
+    width: 998px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    padding: 10px 20px;
+    /*
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-top-color: #999;
+    */
+    background-color: #FEFEFE;
+}
+
+#img-uploaded-div, #selectImageDiv, #editSelectImgDiv
+{
+    background-color: #F5f5f5;
+    padding: 10px;
+    max-height: 332px;
+    overflow: auto;
+    border: 2px solid #BBB;
+    border-right: none;
+    border-left:none;
+}
+.outer-thumbnail-container
+{
+    display: inline-block;
+    margin: 6px;
+}
+.outer-thumbnail-container:hover
+{
+    opacity:0.8;
+    cursor:pointer;
+}
+.outer-thumbnail-container > .checkedIcon
+{
+    display:none;
+}
+.selected-img
+{
+    border: 1px solid #1AA851;
+    border-radius: 6px;
+}
+.selected-img > .checkedIcon
+{
+    width: 14px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #1AA851;
+    color: #FFF;
+    text-align: center;
+    font-size: 10px;
+    float:right;
+    margin-top: -7px;
+    margin-right: -7px;
+    display:block;
+}
+.checkedIcon > .fa
+{
+    width: auto;
+}
+.selected-img > .thumbnail-container
+{
+    border-color: #1AA851;
+}
+
+.thumbnail-container
+{
+    width: 170px;
+    height: 145px;
+    background-color: #FFF;
+    padding: 5px;
+    border: 2px solid #DDD;
+    border-radius: 4px;
+}
+.thumbnail-container > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#inputEdit_UploadImages{
+    display: inline-block;
+    padding: 4px 6px;
+    border: 1px solid #DEDEDE;
+    border-bottom-color: #CCCCCC;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: linear-gradient(#FCFCFC, #EAEAEA);
+}
+
+#edit_UploadImagesBtn
+{
+    margin-left: -4px;
+    padding: 4px 10px;
+    border: 1px solid #CCC;
+    border-bottom-color: #BBB;
+    background-color: #EEE;
+    color: #333;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+#edit_UploadImagesBtn:hover
+{
+    border-color: #BBB;
+    border-bottom-color: #AAA;
+    background-color: #DDD;
+    color: #333;
+}
+
+#removeImageBtn
+{
+    
+}
+
+.highlighted-link
+{
+    font-weight: bold;
+}

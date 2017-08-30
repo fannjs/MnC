@@ -1,0 +1,227 @@
+﻿
+#machine-list-main-div
+{
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: #FFF;
+    width: 70%;
+    box-shadow: 3px 3px 4px 1px;
+    position:relative;
+    margin: 2em auto;
+}
+#machine-list-main-div > table
+{
+    width: 100%;
+}
+#machine-list-main-div > table >tbody > tr > td:first-child
+{
+    border: 1px solid #ccc;
+    background-color: #F1F1F1;
+    width: 20%;
+}
+#selected-machine-div
+{
+    padding: 15px;
+    text-align: center;
+}
+#selected-machine-div hr,
+#machine-list-div hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#selected-machine
+{
+    overflow: auto;
+    max-height: 250px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+#machine-list-div
+{
+    padding: 8px;
+}
+#machine-list-header
+{
+    padding: 8px;
+}
+#machine-list-search > .fa
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0.4;
+} 
+#inputSearchMachine
+{
+    margin: 0px;
+    padding: 5px 15px 5px 30px;
+    border: 1px solid #ccc;
+}
+#machine-list-body
+{
+    padding: 15px 0px 5px 2px;
+    height: 310px;
+    overflow: auto;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+#machine-list-body .row
+{
+    margin: 0px;
+}
+#machine-list-body .a-machine
+{
+    border: 1px solid #999;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    border-radius: 4px; 
+}
+#machine-list-body .a-machine:hover
+{
+    background-color: #FAFAFA;
+    border-color: #888;
+    cursor:pointer;
+}
+#machine-detail-tooltip
+{
+    position: fixed;
+    border-radius: 3px;
+    padding: 8px;
+    z-index: 9999;
+    background-color: #FFF;
+    margin-left: -30px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd #ccc #bbb;
+}
+.machine-detail-branch-code,
+.machine-detail-branch-name
+{
+    padding: 4px 8px;
+    color: #316CE5;
+    font-weight: bold;
+}
+.machine-detail-address
+{
+    padding: 4px 8px;
+    color: #0091FF;
+    display:block;
+}
+#machine-list-body .a-selected-machine-id
+{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+    font-weight: bold;
+}
+#machine-list-body .a-selected-machine-id:hover
+{
+    background-color: #53A653;
+    border-color: #3D8B3D;
+    cursor:pointer;
+}
+#machine-list-footer
+{
+    padding: 8px;
+}
+
+#select-machine-tab-div > div 
+{
+    display:inline-block;
+    vertical-align:top;
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+
+}
+#select-machine-tab-div > div:nth-child(1) 
+{
+    width: calc(20% - 2px);
+}
+#select-machine-tab-div > div:nth-child(2) 
+{
+    width: calc(80% - 2px);
+}
+
+#assignment-addnew-div {
+    display:block;
+}
+
+#selected-machine-list {
+    min-height:310px;
+}
+
+#selected-machine-id {
+    overflow: auto;
+    max-height: 300px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#full-kiosk-list-table
+{
+    width: 100%;
+}
+#full-kiosk-list-table > thead > tr > th
+{
+    padding: 8px;
+    border: 1px solid #333;
+    background-color: #000;
+    color: #FFF;
+}
+#full-kiosk-list-table td
+{
+    padding: 8px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+}
+#pagination
+{
+    margin-top: 0px;
+    float: left;
+}
+#pagination > li
+{
+    cursor: pointer;
+}
+#pagination active
+{
+    cursor: default;
+}
+
+#selection-div
+{
+    margin-bottom: 4px;
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+#record-per-page
+{
+    margin: 0px 5px;
+    padding: 5px 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+#page-footer
+{
+    margin-top: 20px;
+    text-align: right;
+}
+#page-information
+{
+    color: #000;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.addNewVer-div {
+    margin-bottom: 5px;
+
+}

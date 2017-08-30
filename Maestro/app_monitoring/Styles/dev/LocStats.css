@@ -1,0 +1,350 @@
+﻿
+
+
+    html,
+    body {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: black;
+    }
+
+    body, .DropDownListCssClass   {
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 12px;/*13.5*/
+    }
+
+    .box {
+        background-color: gray;
+        border: groove rgba(13,45,84, 0.5) 1px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    /*BOXIE STYLE
+    ****************/
+    .divCenter {
+        display:table;
+        margin: 0 auto;
+    }
+
+    .loose {
+        padding: 12px 15px;
+    }
+
+    .empty{
+        padding: 1px 15px;
+    }
+
+    .tight {
+        padding: 12px 10px;
+    }
+
+    .tighter {
+        padding: 5px 10px;
+    }
+    .float {
+        float:left;
+
+        /*overflow: hidden;*/
+    }
+
+    span.small
+    {
+        font-size: 12px
+    }
+
+
+
+
+    /*THE DYNAMIC EXPANDABLE
+    ***********************/
+    .navChild
+    {
+        display: inline-block;
+        width: 22%;
+        vertical-align: middle;
+    }
+    .navDirection
+    {
+        width: 3%;
+        color: white;
+    }
+
+    .navContainer
+    {
+        text-align: left;
+        width: 300px;
+         text-align: center;
+
+    }
+
+    .navChild a{
+        word-wrap: break-word;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        color: #1D60FF;
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited { 
+        color: white; 
+    }  
+
+    #divUrgencyQueue a:hover {
+        text-decoration: none;
+    }
+
+    #divUrgencyQueue a:link {
+        color: black; 
+    }
+
+    #divUrgencyQueue a:visited {
+        color: black; 
+    }
+
+
+    /*Visual design on status code
+    ----------------------------------*/
+    .sERROR {
+        background: none repeat scroll 0 0 #D90029;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .sOK {
+        background-color: rgb(8, 175, 2);
+        text-align: center;
+        font-weight: bolder;
+
+    }
+    .sWARN {
+        background-color: rgb(196,196,6);/*rgb(216,216,65); rgb(234, 211, 54);*/
+        text-align: center;
+        font-weight: bolder;
+
+    }
+    .sOFFLINE {
+        background-color: rgb(94,94,94);/*rgb(203, 203, 203);*/
+        text-align: center;
+        font-weight: bolder;
+
+    }
+    .sHIGHLIGHT {
+        background: #3399FF;
+        text-align: center;
+    }
+    
+
+    /* Visual design for table
+    ----------------------------------*/
+    table { /* border-collapse: collapse; */ border-spacing:1px; }
+    table tr td, table tr th { padding: 1px; }
+ 
+    .tblLocation {
+        table-layout: fixed;
+        width: 268px;
+        color: white;
+    }
+    .tblStats {
+        table-layout: fixed;
+        width: 340px;
+        color: white;
+    }
+
+
+    .box span {
+        color:white;
+        margin-bottom: 5px;
+    }
+
+    .box span.headTitle {
+        font-weight: bolder;
+        font-size: 12px;
+        cursor: move;
+    }
+    .box span.draggable {
+        cursor: move;
+    }
+
+    /* Visual design for div container
+    ----------------------------------*/
+    .innerMachineDetails {
+        border: 1px solid rgb(136, 136, 136); 
+        padding: 2px; 
+        margin: 2px;
+    }
+
+    .machineDetailsContainer {
+        background:#efffff;
+        color:#000000;
+        margin: 5px -5px 0px;
+        border:1px solid #4299ad;
+    }
+
+    #machineFieldListing {
+        height: 150px; 
+        overflow-y: auto;
+    }
+
+    #machineStatusListing {
+        height: 75px; 
+        overflow-y: auto;
+    }
+    #machineLocation {
+        height: 33px; 
+        overflow-y: auto;
+    }
+
+    #machineBranchInfo {
+        height: 110px; 
+        overflow-y: auto;
+        background: #ffffff;
+    }
+
+
+    /* Visual design for dialog
+    ----------------------------------*/
+    .blueDialog .ui-dialog-content {
+        background: none repeat scroll 0px 0px rgb(197, 239, 255);
+    }
+    .blueDialog {
+        padding: 0;
+    }
+    .iFrameDialog{ 
+        padding: 0;
+    }
+
+    .miniIcon {
+        background: none repeat scroll 0 0 #FFFFFF;
+        padding: 1px;
+        cursor: pointer;
+        border: 1px solid #888888;
+        width: 10px;
+        height: 10px;
+    }
+    .smallTitleBar .ui-dialog-titlebar {
+        padding: .1em 1em;
+        font-size: .85em;
+    }
+
+    .blueOceanTopWindow .ui-dialog-content {
+        border: 2px solid #005072;
+    }
+    .blueOceanTopWindow .ui-dialog-titlebar {
+        background: url("../../Images/windowTop_02.png") repeat scroll 0 0 transparent;
+        color:white;
+        font-size: 13px;
+        font-weight:bold;
+        border-left: 2px solid #005072;
+        border-right: 2px solid #005072;
+    }
+
+    /* The Navigation design
+    ---------------------------------*/
+
+    #divNavigation ul { margin: 0; padding: 0; list-style-type: none; }
+    #divNavigation a,
+    #divNavigation a:hover,
+    #divNavigation a:link,
+    #divNavigation a:visited {
+	    color: black;
+	    text-decoration: none;
+    }
+    #divNavigation ul a {
+        display: block;
+        padding-right: 5px;
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #divNavigation ul li {
+        margin: 0;
+        padding: 0;
+        border-bottom: thin solid #aaaaaa;
+    }
+
+    #divNavigation a:hover {
+        background-color: rgb(228, 228, 228);
+    }
+
+    /* Interaction states for juery ui : default, hover, focus, active
+    ----------------------------------*/
+    #divNavigation .ui-state-default {
+	    border: 0px;
+	    background: transparent;
+	    font-weight: normal;
+	    color: white;
+    }
+
+    #divNavigation .ui-state-default a,
+    #divNavigation .ui-state-default a:link,
+    #divNavigation .ui-state-default a:visited {
+	    color: #555555;
+	    text-decoration: none;
+    }
+
+    #divNavigation .ui-state-hover, 
+    #divNavigation .ui-state-focus {
+	    /*border: 1px solid #999999;
+	    background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+	    font-weight: normal;
+	    color: #212121;*/
+    }
+
+    #divNavigation .ui-state-hover a,
+    #divNavigation .ui-state-hover a:hover,
+    #divNavigation .ui-state-hover a:link,
+    #divNavigation .ui-state-hover a:visited {
+	    color: #212121;
+	    text-decoration: none;
+    }
+
+    #divNavigation .ui-state-active{
+	    border: 1px solid #aaaaaa;
+	    background: rgb(218, 218, 221);/*#ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;*/
+	    font-weight: normal;
+	    color: black;
+    }
+     #divNavigation .ui-state-active a,
+     #divNavigation .ui-state-active a:link,
+     #divNavigation .ui-state-active a:visited {
+	    color: #212121;
+	    text-decoration: none;
+    }
+
+    #divNavigation .ui-widget-content {
+        background: rgb(204, 204, 204);
+        padding: 0;
+    }
+
+    .traffic
+    {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        line-height: 70px; /* to vertical center */
+        text-align: center;/* to horizontal center */
+        color: white;
+        font-weight: bolder;
+    }
+
+    .tWARN { background-image: url("../../Images/WARNING.gif"); }
+    .tOK { background-image: url("../../Images/OK.gif"); }
+    .tOFFLINE { background-image: url("../../Images/OFFLINE.gif"); }
+    .tERROR { background-image: url("../../Images/ERROR.gif"); }
+
+    .tWARN_FLASH { background-image: url("../../Images/WARNING_FLASH.gif"); }
+    .tERROR_FLASH { background-image: url("../../Images/ERROR_FLASH.gif"); }
+
+
+
+    #divCountry .tblLocation a{
+        font-weight: bolder;
+    }

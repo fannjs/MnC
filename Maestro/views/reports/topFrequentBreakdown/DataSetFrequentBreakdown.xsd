@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetFrequentBreakdown" targetNamespace="http://tempuri.org/DataSetFrequentBreakdown.xsd" xmlns:mstns="http://tempuri.org/DataSetFrequentBreakdown.xsd" xmlns="http://tempuri.org/DataSetFrequentBreakdown.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetFrequentBreakdown" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetFrequentBreakdown" msprop:Generator_UserDSName="DataSetFrequentBreakdown">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableFrequentBreakdown" msprop:Generator_TableClassName="DataTableFrequentBreakdownDataTable" msprop:Generator_TableVarName="tableDataTableFrequentBreakdown" msprop:Generator_TablePropName="DataTableFrequentBreakdown" msprop:Generator_RowDeletingName="DataTableFrequentBreakdownRowDeleting" msprop:Generator_RowChangingName="DataTableFrequentBreakdownRowChanging" msprop:Generator_RowEvHandlerName="DataTableFrequentBreakdownRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableFrequentBreakdownRowDeleted" msprop:Generator_UserTableName="DataTableFrequentBreakdown" msprop:Generator_RowChangedName="DataTableFrequentBreakdownRowChanged" msprop:Generator_RowEvArgName="DataTableFrequentBreakdownRowChangeEvent" msprop:Generator_RowClassName="DataTableFrequentBreakdownRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kioskID" msprop:Generator_ColumnVarNameInTable="columnkioskID" msprop:Generator_ColumnPropNameInRow="kioskID" msprop:Generator_ColumnPropNameInTable="kioskIDColumn" msprop:Generator_UserColumnName="kioskID" type="xs:string" minOccurs="0" />
+              <xs:element name="kioskType" msprop:Generator_ColumnVarNameInTable="columnkioskType" msprop:Generator_ColumnPropNameInRow="kioskType" msprop:Generator_ColumnPropNameInTable="kioskTypeColumn" msprop:Generator_UserColumnName="kioskType" type="xs:string" minOccurs="0" />
+              <xs:element name="errorType" msprop:Generator_ColumnVarNameInTable="columnerrorType" msprop:Generator_ColumnPropNameInRow="errorType" msprop:Generator_ColumnPropNameInTable="errorTypeColumn" msprop:Generator_UserColumnName="errorType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

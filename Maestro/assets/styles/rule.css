@@ -1,0 +1,820 @@
+﻿/* Rule main div */
+#rule-assignment-main
+{
+}
+
+/* Rule table */
+#rule-assignment-table
+{
+    width: 100%;
+}
+
+#rule-assignment-table > thead > tr > th > .gd-legend
+{
+    position: absolute;
+    background-color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 12px;
+}
+#rule-assignment-table > tbody > tr > td
+{
+    border: 1px solid #888;
+    padding: 8px
+}
+#rule-assignment-table > thead > tr > th:first-child,
+#rule-assignment-table > tbody > tr > td:first-child
+{
+    width: 10%;
+}
+#rule-assignment-table > tbody > tr:first-child > td
+{
+    padding-top: 15px;
+}
+/* Global Default rule div*/
+.global-default-rule
+{
+    text-align: center;
+    width: 250px;
+    word-wrap:break-word;
+}
+.global-default-rule:hover
+{
+    cursor:pointer;
+}
+.global-default-rule > .gd-rule-name
+{
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #FFF;
+    padding: 4px 0px;
+}
+    
+.global-default-rule > .gd-rule-value
+{
+    border-top-color: #888;
+    padding: 4px 0px;
+    font-size: 14px;
+}    
+.incomplete-rule
+{
+    background-color: #FF4E4E;
+    color: #FFF;
+}
+.complete-rule
+{
+    background-color: #5cb85c;
+    color: #FFF;
+}
+.checked-icon
+{
+    float:right;
+    font-size: 14px;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+/* Loading Rule - gif */
+#rule-loader-gif
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px; /* -1 * image width / 2 */
+    margin-top: -32px;  /* -1 * image height / 2 */
+    display: block; 
+}
+/* Rule Assignment Modal */
+#modal-bg-opacity
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0.6;
+    background: #000;
+}
+#global-default-rule-modal
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+    overflow:auto;
+}
+#global-default-rule-bg
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/* business rule configuration div */
+#global-default-rule-config-div
+{
+    position: relative;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 15px;
+    width:800px;
+    background-color: #FFF;
+    margin: 2em auto;
+    box-shadow: 3px 3px 4px 1px;
+}
+#global-default-rule-config-div hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#gd-config-header
+{
+    padding: 8px;
+}
+#gd-config-body
+{
+    padding: 8px;
+}
+#gd-config-body table
+{
+    width: 100%;
+}
+#gd-config-body table > tbody > tr > td:first-child
+{
+    width: 20%;
+    text-align: center;
+}
+#gd-config-body table > tbody > tr > td
+{
+    padding: 10px;
+}
+#inputGroupName,
+.gd-return-section input[type="text"],
+#gd-config-body select
+{
+    border: 1px solid #ccc;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+}
+#add-more-condition:hover,
+#add-more-group:hover,
+#inputCondition:hover
+{
+    cursor: pointer;
+}
+.remove-condition-icon
+{
+    float: left;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: Red;
+}
+#expression-list-row
+{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+#expression-list-div
+{
+    max-height: 242px;
+    overflow: auto;
+    padding: 4px 16px 4px 0px;
+}
+.expression
+{
+    border: 1px solid #A9DFFF;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 6px 0px;
+    background-color: #E8FCFF;
+}
+.exp-editable:hover /* Only for setup group expression */
+{
+    cursor:pointer;
+}
+.exp-active
+{
+    background-color: #95F1FF;
+    border-color: #48BBFF;
+}
+.remove-expression-icon
+{
+    color: red;
+    float: right;
+    position: relative;
+    top: 0px;
+    left: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#inputCondition
+{
+    border: 1px solid #ccc;
+    width: 100%;
+    min-height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555; 
+}
+
+#variable-div
+{
+    width: 70%;
+    border: 1px solid #999;
+    background-color: #FCFCFC;
+    position: absolute;
+    z-index: 9999;
+    box-shadow: 3px 3px 8px 0px;
+}
+/*
+#variable-operator-div:before,
+#variable-operator-div:after
+{
+    content: "";
+	position: absolute;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	top: 0px;
+    left: 20px;
+    margin-top: -10px;
+}
+#variable-operator-div:before
+{
+    border-bottom: 9px solid #666;
+}
+#variable-operator-div:after
+{
+    border-bottom: 9px solid #F6F6F6;
+    margin-top: -9px;
+}
+*/
+#variable-div h4 ,#operator-div h4 
+{
+    margin: 0px;
+    padding: 10px 10px 0px 10px;
+}
+#variable-div > table
+{
+    width: 100%;
+}
+#variable-div > table > tbody > tr:first-child
+{
+    vertical-align: top;
+}
+#variable-div > table > tbody > tr:first-child > td:first-child
+{
+    border-right: 1px solid #999;
+    width:50%;
+}
+#variable-name-div, #operator-list-div
+{
+    padding: 0px 4px 10px 8px;
+}
+
+#variable-name-list, #operator-list
+{
+    min-height: 100px;
+    max-height: 212px;
+    overflow:auto;
+    margin-right: 10px;
+}
+
+#variable-value-column:before
+{
+    content: "OR";
+    position: absolute;
+    background-color: #FCFCFC;
+    font-weight: bold;
+    font-size: 15px;
+    color: #777;
+    margin-left: -21px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+#variable-value-div
+{
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+
+#variable-value-div input[type="text"]
+{
+    margin-left: 10px;
+    padding: 6px 12px;
+    color: #555;
+    border: 1px solid #BBB;
+    height: 34px;
+    font-size: 14px;  
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 150px;
+}
+
+#variable-value-div button
+{
+    height: 34px;
+    margin-left: -1px ;
+    width: 50px;
+    border: 1px solid #BBB;
+    background-color: #DDD;
+    border-top-right-radius: 4px;  
+    border-bottom-right-radius: 4px;
+}
+#variable-value-div button:hover
+{
+    background-color: #D4D4D4;
+}
+.variable-name, .operator-desc
+{
+    font-size: 14px;
+    margin: 4px 0px;
+    color: #0D56F5;
+}
+.variable-name > span,
+.operator-desc > span
+{
+    padding-left: 15px;
+}
+.variable-name > span:hover,
+.operator-desc > span:hover
+{
+    cursor: pointer;
+    color: #1C39D6;
+}
+
+#operator-div
+{
+    border: 1px solid #999;
+    background-color: #FCFCFC;
+    position: absolute;
+    z-index: 9999;
+    box-shadow: 3px 3px 8px 0px;
+    width: 35%;
+}
+
+#inputGDReturn,
+#inputSRReturn
+{
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+#inputTime
+{
+    border: 1px solid #ccc;
+    height: 34px;
+    font-size: 14px;
+    color: #555;
+    padding: 6px 0px 6px 12px;
+}
+
+#gd-return-section select,
+#sr-return-section select
+{
+    border: 1px solid #ccc;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+}
+#gd-return-section input[type="checkbox"],
+#sr-return-section input[type="checkbox"]
+{
+    width: 15px;
+    height: 15px;
+}
+#gd-return-section label,
+#sr-return-section label
+{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: normal;
+    color: #1F45D2;
+}
+/*
+#gd-config-body > table > tbody > tr > td > input
+{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+}
+*/
+.gd-return-error-msg
+{
+    padding-left: 10px;
+    color:Red;
+}
+#gd-return-error-msg > .fa
+{
+    width: 15px;
+}
+#gd-config-footer
+{
+    padding: 8px;
+}
+.close-div-icon
+{
+    color: #000;
+    opacity: 0.3;
+    float: right;
+    position: relative;
+    top: -12px;
+    left: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.config-rule-label
+{
+    font-size: 16px;
+}
+.remark-section
+{
+    border: 1px solid #e1e1e8;
+    background-color: #f7f7f9;
+    padding: 45px 10px 5px 10px;
+    width: 70%;
+}
+.remark-section:before
+{
+    content: "REMARK";
+    opacity: 0.3;
+    font-weight: bold;
+    position: relative;
+    margin-top: -35px;
+    float: left;
+    margin-left: 0px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    
+}
+/* Specific Rule Column */
+.specific-rule-column
+{
+    /* Not required yet
+    
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+    */
+}  
+.specific-rule-column > a
+{
+    cursor: pointer;
+}  
+.specific-rule-column > .specific-rule-inner-column
+{
+    width: 100%;
+}
+.gd-specific
+{
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: default;
+    width: 250px;
+    word-wrap:break-word;
+}
+.gd-specific:hover
+{
+    background: #FCFCFC;
+}
+.gd-specific > .gd-specific-machine
+{
+    font-weight: bold;
+    border-bottom: 1px solid #CCC;
+    padding: 4px 10px;
+    
+}
+.gd-specific > .gd-specific-value
+{
+    border-top-color: #888;
+    padding: 4px 20px;
+}
+.delete-gd-specific-icon
+{
+    color:#D42020;
+    float:right;
+    margin-right: -10px;
+    margin-top: -8px;
+    font-size:14px;
+}
+.delete-gd-specific-icon:hover
+{
+    cursor:pointer;
+}
+.setup-group-name
+{
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 13px;
+    cursor: default;
+    padding: 8px;
+    width: 150px;
+    word-wrap:break-word;
+}
+.setup-group-name:hover
+{
+    background: #FCFCFC;
+}
+#expr-tooltip
+{
+    position: absolute;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 8px;
+    z-index: 9999;
+    background-color: #FBFBFB;
+    margin-top: 20px;
+    margin-left: -8px;
+    box-shadow: 2px 2px 4px 1px;
+    width: 200px;
+    color: #555;
+}
+/* Specific Rule Configuration */
+#specific-rule-modal
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+    overflow:auto;
+}
+#specific-rule-bg
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#machine-list-main-div
+{
+    
+    border-radius: 4px;
+    background-color: #FFF;
+    width: 800px;
+    
+    position:relative;
+    margin: 2em auto;
+}
+#machine-list-main-div > table
+{
+    width: 100%;
+}
+#machine-list-main-div > table >tbody > tr > td:first-child
+{
+    border: 1px solid #ccc;
+    background-color: #F1F1F1;
+    width: 25%;
+}
+#selected-machine-div
+{
+    padding: 15px;
+    text-align: center;
+}
+#selected-machine-div hr,
+#machine-list-div hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#selected-machine
+{
+    overflow: auto;
+    max-height: 163px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+#machine-list-div
+{
+    padding: 8px;
+}
+#machine-list-header
+{
+    padding: 8px;
+}
+#machine-list-search > .fa
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0.4;
+} 
+#inputSearchMachine
+{
+    margin: 0px;
+    padding: 5px 15px 5px 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+#machine-list-body
+{
+    padding: 15px 0px 5px 16px;
+    height: 292px;
+    overflow: auto;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+#machine-list-body .row
+{
+    margin: 0px;
+}
+#machine-list-body .a-machine
+{
+    border: 1px solid #999;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    border-radius: 4px; 
+}
+#machine-list-body .a-machine:hover
+{
+    background-color: #FAFAFA;
+    border-color: #888;
+    cursor:pointer;
+}
+#machine-detail-tooltip
+{
+    position: absolute;
+    border-radius: 3px;
+    padding: 8px;
+    z-index: 9999;
+    background-color: #FFF;
+    margin-left: -30px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd #ccc #bbb;
+}
+.machine-detail-branch-code,
+.machine-detail-branch-name
+{
+    padding: 4px 8px;
+    color: #316CE5;
+    font-weight: bold;
+}
+.machine-detail-address
+{
+    padding: 4px 8px;
+    color: #0091FF;
+    display:block;
+}
+#machine-list-body .a-selected-machine
+{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+    font-weight: bold;
+}
+#machine-list-body .a-selected-machine:hover
+{
+    background-color: #53A653;
+    border-color: #3D8B3D;
+    cursor:pointer;
+}
+#machine-list-footer
+{
+    padding: 8px;
+}
+/*
+#specific-rule-config-div
+{
+    padding: 8px;
+}
+#specific-rule-config-div > table
+{
+    width: 100%;
+}
+#specific-rule-config-div > table > tbody > tr > td:first-child
+{
+    width: 20%;
+    border: 1px solid #ccc;
+    background-color: #F1F1F1;
+}
+*/
+#close-sr-div
+{
+    color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 100%;
+    margin-top: -10px;
+    margin-left: -28px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#gd-value-div
+{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word;
+}
+#gd-current-value
+{
+    font-size: 14px;
+}
+#gd-current-rule-name
+{
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+#gd-current-rule-name,
+#gd-current-rule-value
+{
+    padding: 4px;
+    color: #000DFF;
+}
+#gd-current-rule-value
+{
+    height: 169px;
+    overflow: auto;
+}
+#gd-value-div hr,
+#sr-value-div hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top-color: #ccc;
+}
+#sr-value-div
+{
+    padding: 8px;
+}
+#sr-value-header
+{
+    padding: 8px;
+}
+#sr-value-header > p
+{
+    margin: 0px;
+}
+#sr-value-body
+{
+    padding: 8px;
+    border-top: 1px solid #ddd;
+}
+#sr-value-footer
+{
+    padding: 8px;
+    
+}
+#sr-value-body table
+{
+    width: 100%;
+}
+#sr-value-body table > tbody > tr > td:first-child
+{
+    width: 20%;
+    text-align: center;
+}
+#sr-value-body table > tbody > tr > td
+{
+    padding: 10px;
+}
+#sr-value-body table > tbody > tr > td > input
+{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555;
+}
+.sr-return-error-msg
+{
+    padding-left: 10px;
+    color:Red;
+}
+.sr-return-error-msg > .fa
+{
+    width: 15px;
+}

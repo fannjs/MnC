@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetUpDownTime" targetNamespace="http://tempuri.org/DataSetUpDownTime.xsd" xmlns:mstns="http://tempuri.org/DataSetUpDownTime.xsd" xmlns="http://tempuri.org/DataSetUpDownTime.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetUpDownTime" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetUpDownTime" msprop:Generator_UserDSName="DataSetUpDownTime">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSetUpDownTime" msprop:Generator_TableClassName="DataSetUpDownTimeDataTable" msprop:Generator_TableVarName="tableDataSetUpDownTime" msprop:Generator_RowChangedName="DataSetUpDownTimeRowChanged" msprop:Generator_TablePropName="_DataSetUpDownTime" msprop:Generator_RowDeletingName="DataSetUpDownTimeRowDeleting" msprop:Generator_RowChangingName="DataSetUpDownTimeRowChanging" msprop:Generator_RowEvHandlerName="DataSetUpDownTimeRowChangeEventHandler" msprop:Generator_RowDeletedName="DataSetUpDownTimeRowDeleted" msprop:Generator_RowClassName="DataSetUpDownTimeRow" msprop:Generator_UserTableName="DataSetUpDownTime" msprop:Generator_RowEvArgName="DataSetUpDownTimeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="machDate" msprop:Generator_ColumnVarNameInTable="columnmachDate" msprop:Generator_ColumnPropNameInRow="machDate" msprop:Generator_ColumnPropNameInTable="machDateColumn" msprop:Generator_UserColumnName="machDate" type="xs:string" minOccurs="0" />
+              <xs:element name="machID" msprop:Generator_ColumnVarNameInTable="columnmachID" msprop:Generator_ColumnPropNameInRow="machID" msprop:Generator_ColumnPropNameInTable="machIDColumn" msprop:Generator_UserColumnName="machID" type="xs:string" minOccurs="0" />
+              <xs:element name="upTime" msprop:Generator_ColumnVarNameInTable="columnupTime" msprop:Generator_ColumnPropNameInRow="upTime" msprop:Generator_ColumnPropNameInTable="upTimeColumn" msprop:Generator_UserColumnName="upTime" type="xs:string" minOccurs="0" />
+              <xs:element name="downTime" msprop:Generator_ColumnVarNameInTable="columndownTime" msprop:Generator_ColumnPropNameInRow="downTime" msprop:Generator_ColumnPropNameInTable="downTimeColumn" msprop:Generator_UserColumnName="downTime" type="xs:string" minOccurs="0" />
+              <xs:element name="ttlHrsMach" msprop:Generator_ColumnVarNameInTable="columnttlHrsMach" msprop:Generator_ColumnPropNameInRow="ttlHrsMach" msprop:Generator_ColumnPropNameInTable="ttlHrsMachColumn" msprop:Generator_UserColumnName="ttlHrsMach" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

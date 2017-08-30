@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetMachStatus" targetNamespace="http://tempuri.org/DataSetPerformance.xsd" xmlns:mstns="http://tempuri.org/DataSetPerformance.xsd" xmlns="http://tempuri.org/DataSetPerformance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetMachStatus" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetMachStatus" msprop:Generator_UserDSName="DataSetMachStatus">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DateSetMachStatus" msprop:Generator_TableClassName="DateSetMachStatusDataTable" msprop:Generator_TableVarName="tableDateSetMachStatus" msprop:Generator_RowChangedName="DateSetMachStatusRowChanged" msprop:Generator_TablePropName="DateSetMachStatus" msprop:Generator_RowDeletingName="DateSetMachStatusRowDeleting" msprop:Generator_RowChangingName="DateSetMachStatusRowChanging" msprop:Generator_RowEvHandlerName="DateSetMachStatusRowChangeEventHandler" msprop:Generator_RowDeletedName="DateSetMachStatusRowDeleted" msprop:Generator_RowClassName="DateSetMachStatusRow" msprop:Generator_UserTableName="DateSetMachStatus" msprop:Generator_RowEvArgName="DateSetMachStatusRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="KioskID" msprop:Generator_ColumnVarNameInTable="columnKioskID" msprop:Generator_ColumnPropNameInRow="KioskID" msprop:Generator_ColumnPropNameInTable="KioskIDColumn" msprop:Generator_UserColumnName="KioskID" type="xs:string" minOccurs="0" />
+              <xs:element name="Error" msprop:Generator_ColumnVarNameInTable="columnError" msprop:Generator_ColumnPropNameInRow="Error" msprop:Generator_ColumnPropNameInTable="ErrorColumn" msprop:Generator_UserColumnName="Error" type="xs:int" minOccurs="0" />
+              <xs:element name="Warning" msprop:Generator_ColumnVarNameInTable="columnWarning" msprop:Generator_ColumnPropNameInRow="Warning" msprop:Generator_ColumnPropNameInTable="WarningColumn" msprop:Generator_UserColumnName="Warning" type="xs:int" minOccurs="0" />
+              <xs:element name="Offline" msprop:Generator_ColumnVarNameInTable="columnOffline" msprop:Generator_ColumnPropNameInRow="Offline" msprop:Generator_ColumnPropNameInTable="OfflineColumn" msprop:Generator_UserColumnName="Offline" type="xs:int" minOccurs="0" />
+              <xs:element name="Normal" msprop:Generator_ColumnVarNameInTable="columnNormal" msprop:Generator_ColumnPropNameInRow="Normal" msprop:Generator_ColumnPropNameInTable="NormalColumn" msprop:Generator_UserColumnName="Normal" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

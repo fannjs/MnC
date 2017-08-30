@@ -1,0 +1,1382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9083D33-B66D-4232-B94F-C42620D1BEFB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maestro</RootNamespace>
+    <AssemblyName>Maestro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Maestro.XML</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DeployIisAppPath>C:\inetpub\wwwroot\Maestro</DeployIisAppPath>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <DesktopBuildPackageLocation>C:\inetpub\wwwroot\Maestro\package</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeEngine.Framework">
+      <HintPath>dll\CodeEngine.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>dll\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="KioskFileHandler, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\KioskFileHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PEG">
+      <HintPath>dll\PEG.dll</HintPath>
+    </Reference>
+    <Reference Include="RototypeIntl.Database">
+      <HintPath>dll\RototypeIntl.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Json">
+      <HintPath>dll\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_monitoring\content\LocStats.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\content\LocStatsService.asmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\content\MachTemplate.asmx" />
+    <Content Include="app_monitoring\content\MachTemplate.aspx" />
+    <Content Include="app_monitoring\content\UserMgmt.aspx" />
+    <Content Include="assets\images\80288-200.png" />
+    <Content Include="assets\images\greenbutton.png" />
+    <Content Include="assets\images\redbutton.png" />
+    <Content Include="views\EventStatus.aspx" />
+    <Content Include="app_monitoring\Images\btn_quickview_off.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Images\btn_quickview_on.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Images\cal.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Images\ERROR.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\ERROR_FLASH.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Images\maestroLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Images\OFFLINE.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\OK.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Images\WARNING.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\WARNING_FLASH.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\dev\generalDialog.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\dev\LocStats.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\lib\jquery\jquery-1.9.1.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\lib\jquery\jquery-ui-1.10.3.custom.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\lib\jquery\jquery-ui-1.10.3.custom.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\lib\jquery\jquery.editable.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\lib\jquery\jquery.tablesorter.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\js\lib\json\json2.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\circle-ball-loader.gif" />
+    <Content Include="assets\scripts\charts\ChartLegend.js" />
+    <Content Include="assets\scripts\charts\Chart.js" />
+    <Content Include="assets\scripts\charts\Chart.min.js" />
+    <Content Include="assets\scripts\kioskMaintenance\bootstrap-datetimepicker.js" />
+    <Content Include="assets\scripts\kioskMaintenance\softwareDistribution\machineslist.js" />
+    <Content Include="assets\scripts\kioskManagement\manageKiosk\machineslist.js" />
+    <Content Include="assets\scripts\tasklist.js" />
+    <Content Include="assets\styles\bootstrap-datetimepicker.css" />
+    <Content Include="assets\styles\charts\chart-legend.css" />
+    <Content Include="assets\styles\mahineslist.css" />
+    <Content Include="components\bootstrap.datepicker\css\datepicker.css" />
+    <Content Include="components\bootstrap.datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ar.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.da.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.de.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.el.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.es.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.et.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.he.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.id.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.is.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.it.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ka.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.mk.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.nb.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.no.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.sq.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.th.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.uk.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="components\bootstrap.datepicker\js\locales\bootstrap-datepicker.zh-TW.js" />
+    <Content Include="components\jquery-ui\external\jquery\jquery.js" />
+    <Content Include="components\jquery-ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="components\jquery-ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="components\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="components\jquery-ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="components\jquery-ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="components\jquery-ui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="components\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="components\jquery-ui\jquery-ui.min.css" />
+    <Content Include="components\jquery-ui\jquery-ui.structure.min.css" />
+    <Content Include="components\jquery-ui\jquery-ui.theme.min.css" />
+    <Content Include="app_monitoring\Styles\dev\generalDialog.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Styles\dev\LocStats.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Styles\dev\navmenu.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Styles\smoothness\jquery-ui-1.10.3.custom.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_monitoring\Styles\smoothness\jquery-ui-1.10.3.custom.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\audios\ding.wav" />
+    <Content Include="assets\images\facebook-loader.gif" />
+    <Content Include="assets\images\loader.gif" />
+    <Content Include="assets\images\machine_diagram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\uiTabsArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\zoom.png" />
+    <Content Include="assets\scripts\administration\siteManagement\add.js" />
+    <Content Include="assets\scripts\administration\siteManagement\edit.js" />
+    <Content Include="dll\CrystalDecisions.CrystalReports.Engine.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dll\CrystalDecisions.ReportSource.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dll\CrystalDecisions.Shared.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dll\CrystalDecisions.Web.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="views\administration\userAccess\add.js" />
+    <Content Include="views\administration\userAccess\edit.js" />
+    <Content Include="views\administration\userAccess\main.js" />
+    <Content Include="assets\scripts\administration\vendorManagement\edit.js" />
+    <Content Include="assets\scripts\configs\config.factory.js" />
+    <Content Include="assets\scripts\configs\config.service.js" />
+    <Content Include="assets\scripts\configs\json\countries.js" />
+    <Content Include="assets\scripts\countdown.js" />
+    <Content Include="assets\scripts\dashboard.js" />
+    <Content Include="assets\scripts\kioskMaintenance\holdiay.js" />
+    <Content Include="assets\scripts\kioskMaintenance\rule.js" />
+    <Content Include="assets\scripts\kioskManagement\installMachine\installMachine.js" />
+    <Content Include="assets\scripts\kioskManagement\installMachine\main.js" />
+    <Content Include="assets\scripts\kioskManagement\machineTemplate\main.js" />
+    <Content Include="assets\scripts\kioskManagement\setupBranch\main.js" />
+    <Content Include="assets\scripts\plugins\plugin.selectbox.js" />
+    <Content Include="assets\scripts\reports\fullkiosklist.js" />
+    <Content Include="assets\styles\advertisement.css" />
+    <Content Include="assets\styles\machineTemplate.css" />
+    <Content Include="assets\styles\rule.css" />
+    <Content Include="assets\styles\calendar.css" />
+    <Content Include="assets\styles\fullkiosklist.css" />
+    <Content Include="views\administration\userAccess\userAccess.css" />
+    <Content Include="components\font-awesome\font-awesome.min.css" />
+    <Content Include="components\fonts\fontawesome-webfont.svg" />
+    <Content Include="components\bootstrap3\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\machine.png" />
+    <Content Include="assets\images\sidebar-bg.png" />
+    <Content Include="components\bootstrap3\js\bootstrap-multiselect.js" />
+    <Content Include="components\bootstrap3\js\bootstrap.js" />
+    <Content Include="components\bootstrap3\js\bootstrap.min.js" />
+    <Content Include="components\fullcalendar\fullcalendar.css" />
+    <Content Include="components\fullcalendar\fullcalendar.min.js" />
+    <Content Include="components\fullcalendar\fullcalendar.print.css" />
+    <Content Include="components\jquery-ui\jquery-ui.min.js" />
+    <Content Include="components\jquery\jquery.js" />
+    <Content Include="components\jquery-tablesorter\jquery.tablesorter.min.js" />
+    <Content Include="components\magnific\jquery.magnific-popup.js" />
+    <Content Include="components\magnific\jquery.magnific-popup.min.js" />
+    <Content Include="components\magnific\magnific-popup.css" />
+    <Content Include="components\moment\moment.min.js" />
+    <Content Include="components\bootstrap3\css\bootstrap-multiselect.css" />
+    <Content Include="components\bootstrap3\css\bootstrap-theme.css" />
+    <Content Include="components\bootstrap3\css\bootstrap-theme.min.css" />
+    <Content Include="components\bootstrap3\css\bootstrap.css" />
+    <Content Include="components\bootstrap3\css\bootstrap.min.css" />
+    <Content Include="assets\styles\dashboard.css" />
+    <Content Include="assets\styles\index.css" />
+    <Content Include="components\sensors\css\arrow.css" />
+    <Content Include="components\sensors\css\sensorfield.css" />
+    <Content Include="components\sensors\js\sensor.js" />
+    <Content Include="components\sensors\js\sensorfield.js" />
+    <Content Include="Global.asax" />
+    <Content Include="login.aspx" />
+    <Content Include="views\administration\notification\main.aspx" />
+    <Content Include="views\administration\siteManagement\add.aspx" />
+    <Content Include="views\administration\siteManagement\edit.aspx" />
+    <Content Include="views\administration\siteManagement\main.aspx" />
+    <Content Include="views\administration\statusCodeEscalation\addEdit.css" />
+    <Content Include="views\administration\statusCodeEscalation\addEscalation.aspx" />
+    <Content Include="views\administration\statusCodeEscalation\addEscalation.js" />
+    <Content Include="views\administration\statusCodeEscalation\configureEmail.aspx" />
+    <Content Include="views\administration\statusCodeEscalation\configureSMS.aspx" />
+    <Content Include="views\administration\statusCodeEscalation\editEscalation.aspx" />
+    <Content Include="views\administration\statusCodeEscalation\editEscalation.js" />
+    <Content Include="views\administration\statusCodeEscalation\main.aspx" />
+    <Content Include="views\administration\statusCodeEscalation\main.js" />
+    <Content Include="views\administration\userAccess\add.aspx" />
+    <Content Include="views\administration\userAccess\edit.aspx" />
+    <Content Include="views\administration\userAccess\main.aspx" />
+    <Content Include="views\administration\userManagement\add.aspx" />
+    <Content Include="views\administration\userManagement\edit.aspx" />
+    <Content Include="views\administration\userManagement\main.aspx" />
+    <Content Include="views\administration\userManagement\userProfile.aspx" />
+    <Content Include="views\administration\vendorManagement\add.aspx" />
+    <Content Include="views\administration\vendorManagement\edit.aspx" />
+    <Content Include="views\administration\vendorManagement\main.aspx" />
+    <Content Include="views\kioskMaintenance\adsMaintenance\main.aspx" />
+    <Content Include="views\kioskMaintenance\adsMaintenance\main.js" />
+    <Content Include="views\kioskMaintenance\advertisement\main.aspx" />
+    <Content Include="views\kioskMaintenance\advertisement\specific.aspx" />
+    <Content Include="views\kioskMaintenance\businessDay\main.aspx" />
+    <Content Include="views\dashboard.aspx" />
+    <Content Include="views\fullscreen.aspx" />
+    <Content Include="views\index.aspx" />
+    <Content Include="views\kioskMaintenance\cassette\cassette.js" />
+    <Content Include="views\kioskMaintenance\cassette\cassetteMain.aspx" />
+    <Content Include="views\kioskMaintenance\holidayMaintenance\main.aspx" />
+    <Content Include="views\kioskMaintenance\rulesAssignment\main.aspx" />
+    <Content Include="views\kioskMaintenance\softwareDistribution\main.aspx" />
+    <Content Include="views\kioskMaintenance\softwareDistribution\main.js" />
+    <Content Include="views\kioskManagement\installMachine\main.aspx" />
+    <Content Include="views\kioskManagement\logRetrieval\main.aspx" />
+    <Content Include="views\kioskManagement\logRetrieval\main.css" />
+    <Content Include="views\kioskManagement\logRetrieval\main.js" />
+    <Content Include="views\kioskManagement\machineTemplate\add.aspx" />
+    <Content Include="views\kioskManagement\machineTemplate\edit.aspx" />
+    <Content Include="views\kioskManagement\machineTemplate\main.aspx" />
+    <Content Include="views\kioskManagement\manageKiosk\main.aspx" />
+    <Content Include="views\kioskManagement\manageKiosk\mgnKiosk.aspx" />
+    <Content Include="views\kioskManagement\setupBranch\main.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="views\reconciliation\chequeCounterBalancing\main.aspx" />
+    <Content Include="views\reconciliation\chequeCounter\main.aspx" />
+    <Content Include="views\reconciliation\transactionBalancing\main.aspx" />
+    <Content Include="views\reports\auditTrail\main.aspx" />
+    <Content Include="views\reports\auditTrail\main.css" />
+    <Content Include="views\reports\auditTrail\main.js" />
+    <Content Include="views\reports\fullKioskList\fullKioskListMain.aspx" />
+    <Content Include="views\reports\fullKioskList\fullKioskListOutput.aspx" />
+    <Content Include="views\reports\fullKioskList\main.aspx" />
+    <Content Include="views\reports\longestDowntime\longestDowntimeMain.aspx" />
+    <Content Include="views\reports\longestDowntime\longestDowntimeOutput.aspx" />
+    <Content Include="views\reports\longestResponse\longestResponseMain.aspx" />
+    <Content Include="views\reports\longestResponse\longestResponseOutput.aspx" />
+    <Content Include="views\reports\performance\performanceMain.aspx" />
+    <Content Include="views\reports\performance\performanceOutput.aspx" />
+    <Content Include="views\reports\problemStatistics\mainProblemStatistics.aspx" />
+    <Content Include="views\reports\problemStatistics\problemStatisticsOutput.aspx" />
+    <Content Include="views\reports\statusReport\machStatusMain.aspx" />
+    <Content Include="views\reports\statusReport\machStatusOutput.aspx" />
+    <Content Include="views\reports\statusReport\mainStatusRpt.aspx" />
+    <Content Include="views\reports\statusReport\statusReportOutput.aspx" />
+    <Content Include="views\reports\topFrequentBreakdown\frequentBreakdownMain.aspx" />
+    <Content Include="views\reports\topFrequentBreakdown\frequentBreakdownOutput.aspx" />
+    <Content Include="views\reports\topFrequentBreakdown\mainTopFreqDown.aspx" />
+    <Content Include="views\reports\topFrequentBreakdown\topFreqDownOutput.aspx" />
+    <Content Include="views\reports\upDowntime\upDownTimeMain.aspx" />
+    <Content Include="views\reports\upDowntime\upDownTimeOutput.aspx" />
+    <Content Include="views\tasklist.aspx" />
+    <Content Include="Web.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\WebApiConfig.cs" />
+    <Compile Include="app_monitoring\Controllers\CustomerController.cs" />
+    <Compile Include="app_monitoring\Controllers\MachineErrorController.cs" />
+    <Compile Include="app_monitoring\Controllers\MachineTypeController.cs" />
+    <Compile Include="app_monitoring\Controllers\UserInfoController.cs" />
+    <Compile Include="app_monitoring\Controllers\VendorController.cs" />
+    <Compile Include="app_monitoring\content\LocStats.aspx.cs">
+      <DependentUpon>LocStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\content\LocStats.aspx.designer.cs">
+      <DependentUpon>LocStats.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\content\LocStatsService.asmx.cs">
+      <DependentUpon>LocStatsService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\content\MachTemplate.asmx.cs">
+      <DependentUpon>MachTemplate.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="app_monitoring\content\MachTemplate.aspx.cs">
+      <DependentUpon>MachTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_monitoring\content\MachTemplate.aspx.designer.cs">
+      <DependentUpon>MachTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app_monitoring\content\MaestroDateTime.cs" />
+    <Compile Include="app_monitoring\content\UserMgmt.aspx.cs">
+      <DependentUpon>UserMgmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_monitoring\content\UserMgmt.aspx.designer.cs">
+      <DependentUpon>UserMgmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\CountryStatusList.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\ErrorCodeList.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\Intent.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\LiveTraffic.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\LocationStatusList.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\MachineDetails.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\MachineTypeList.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataObject\UrgencyQueueList.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataUtil\DataAccessor.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="app_monitoring\DataUtil\InsertCommandBuilder.cs" />
+    <Compile Include="app_monitoring\DataUtil\QueryBuilderExtensions.cs" />
+    <Compile Include="app_monitoring\DataUtil\SqlMapper.cs" />
+    <Compile Include="app_monitoring\DataUtil\SqlMapperUtil.cs" />
+    <Compile Include="views\EventStatus.aspx.cs">
+      <DependentUpon>EventStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\EventStatus.aspx.designer.cs">
+      <DependentUpon>EventStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app_monitoring\Models\Customer.cs" />
+    <Compile Include="app_monitoring\Models\IRepository.cs" />
+    <Compile Include="app_monitoring\Models\MachineError.cs" />
+    <Compile Include="app_monitoring\Models\MachineType.cs" />
+    <Compile Include="app_monitoring\Models\RepositoryBase.cs" />
+    <Compile Include="app_monitoring\Models\UserInfo.cs" />
+    <Compile Include="app_monitoring\Models\Vendor.cs" />
+    <Compile Include="Classes\MakerChecker\MKCK.cs" />
+    <Compile Include="Classes\MakerChecker\MKCK_Function.cs" />
+    <Compile Include="Classes\McObject.cs" />
+    <Compile Include="Classes\Pagination.cs" />
+    <Compile Include="Classes\Prefix\AdvFileType.cs" />
+    <Compile Include="Classes\Prefix\MKCK_Prefix.cs" />
+    <Compile Include="dbconn.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaestroModule.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\notification\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\notification\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\siteManagement\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\siteManagement\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\siteManagement\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\siteManagement\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\siteManagement\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\siteManagement\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\addEscalation.aspx.cs">
+      <DependentUpon>addEscalation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\addEscalation.aspx.designer.cs">
+      <DependentUpon>addEscalation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\configureEmail.aspx.cs">
+      <DependentUpon>configureEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\configureEmail.aspx.designer.cs">
+      <DependentUpon>configureEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\configureSMS.aspx.cs">
+      <DependentUpon>configureSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\configureSMS.aspx.designer.cs">
+      <DependentUpon>configureSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Prefix\EscalateType.cs" />
+    <Compile Include="views\administration\statusCodeEscalation\editEscalation.aspx.cs">
+      <DependentUpon>editEscalation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\editEscalation.aspx.designer.cs">
+      <DependentUpon>editEscalation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\statusCodeEscalation\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userAccess\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userAccess\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userAccess\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userAccess\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userAccess\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userAccess\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userManagement\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userManagement\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userManagement\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userManagement\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userManagement\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userManagement\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\userManagement\userProfile.aspx.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\userManagement\userProfile.aspx.designer.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\vendorManagement\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\vendorManagement\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\vendorManagement\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\vendorManagement\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\administration\vendorManagement\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\administration\vendorManagement\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="controller\GetDateTime.ashx.cs">
+      <DependentUpon>GetDateTime.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\adsMaintenance\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\adsMaintenance\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\advertisement\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\advertisement\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\advertisement\specific.aspx.cs">
+      <DependentUpon>specific.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\advertisement\specific.aspx.designer.cs">
+      <DependentUpon>specific.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\businessDay\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\businessDay\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\fullscreen.aspx.cs">
+      <DependentUpon>fullscreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\fullscreen.aspx.designer.cs">
+      <DependentUpon>fullscreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\cassette\cassetteMain.aspx.cs">
+      <DependentUpon>cassetteMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\cassette\cassetteMain.aspx.designer.cs">
+      <DependentUpon>cassetteMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\holidayMaintenance\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\holidayMaintenance\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\rulesAssignment\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\rulesAssignment\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\softwareDistribution\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\softwareDistribution\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskMaintenance\softwareDistribution\UploadFiles.ashx.cs">
+      <DependentUpon>UploadFiles.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\installMachine\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\installMachine\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\logRetrieval\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\logRetrieval\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\machineTemplate\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\machineTemplate\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\machineTemplate\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\machineTemplate\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\machineTemplate\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\machineTemplate\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\manageKiosk\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\manageKiosk\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\manageKiosk\mgnKiosk.aspx.cs">
+      <DependentUpon>mgnKiosk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\manageKiosk\mgnKiosk.aspx.designer.cs">
+      <DependentUpon>mgnKiosk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\kioskManagement\setupBranch\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\kioskManagement\setupBranch\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reconciliation\chequeCounterBalancing\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reconciliation\chequeCounterBalancing\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reconciliation\chequeCounter\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reconciliation\chequeCounter\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reconciliation\transactionBalancing\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reconciliation\transactionBalancing\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\auditTrail\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\auditTrail\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\crFullKioskList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crFullKioskList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\fullKioskListMain.aspx.cs">
+      <DependentUpon>fullKioskListMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\fullKioskListMain.aspx.designer.cs">
+      <DependentUpon>fullKioskListMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\fullKioskListOutput.aspx.cs">
+      <DependentUpon>fullKioskListOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\fullKioskListOutput.aspx.designer.cs">
+      <DependentUpon>fullKioskListOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\fullKioskList\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\crLongestDowntime_barChart.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLongestDowntime_barChart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\crLongestDowntime_pieChart.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLongestDowntime_pieChart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\DataSetLongestDowntime.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetLongestDowntime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\longestDowntimeMain.aspx.cs">
+      <DependentUpon>longestDowntimeMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\longestDowntimeMain.aspx.designer.cs">
+      <DependentUpon>longestDowntimeMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\longestDowntimeOutput.aspx.cs">
+      <DependentUpon>longestDowntimeOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestDowntime\longestDowntimeOutput.aspx.designer.cs">
+      <DependentUpon>longestDowntimeOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\crLongestResponse.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLongestResponse.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\crLongestResponse_group.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLongestResponse_group.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\DataSetLongestResponse.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetLongestResponse.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\longestResponseMain.aspx.cs">
+      <DependentUpon>longestResponseMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\longestResponseMain.aspx.designer.cs">
+      <DependentUpon>longestResponseMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\longestResponseOutput.aspx.cs">
+      <DependentUpon>longestResponseOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\longestResponse\longestResponseOutput.aspx.designer.cs">
+      <DependentUpon>longestResponseOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\performance\crPerformance_line.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crPerformance_line.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\performance\DataSetPerformance.cs">
+      <DependentUpon>DataSetPerformance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\performance\DataSetPerformance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPerformance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\performance\performanceMain.aspx.cs">
+      <DependentUpon>performanceMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\performance\performanceMain.aspx.designer.cs">
+      <DependentUpon>performanceMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\performance\performanceOutput.aspx.cs">
+      <DependentUpon>performanceOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\performance\performanceOutput.aspx.designer.cs">
+      <DependentUpon>performanceOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\problemStatistics\mainProblemStatistics.aspx.cs">
+      <DependentUpon>mainProblemStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\problemStatistics\mainProblemStatistics.aspx.designer.cs">
+      <DependentUpon>mainProblemStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\problemStatistics\mProblemSta_barChart.cs">
+      <DependentUpon>mProblemSta_barChart.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="views\reports\problemStatistics\mProblemSta_pieChart.cs">
+      <DependentUpon>mProblemSta_pieChart.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="views\reports\problemStatistics\problemStatisticsOutput.aspx.cs">
+      <DependentUpon>problemStatisticsOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\problemStatistics\problemStatisticsOutput.aspx.designer.cs">
+      <DependentUpon>problemStatisticsOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\statusReport\crMachStatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crMachStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\statusReport\DataSetMachStatus.cs">
+      <DependentUpon>DataSetMachStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\statusReport\DataSetMachStatus.Designer.cs">
+      <DependentUpon>DataSetMachStatus.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="views\reports\statusReport\machStatusMain.aspx.cs">
+      <DependentUpon>machStatusMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\statusReport\machStatusMain.aspx.designer.cs">
+      <DependentUpon>machStatusMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\statusReport\machStatusOutput.aspx.cs">
+      <DependentUpon>machStatusOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\statusReport\machStatusOutput.aspx.designer.cs">
+      <DependentUpon>machStatusOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\statusReport\mainStatusRpt.aspx.cs">
+      <DependentUpon>mainStatusRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\statusReport\mainStatusRpt.aspx.designer.cs">
+      <DependentUpon>mainStatusRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\statusReport\mStatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="views\reports\statusReport\statusReportOutput.aspx.cs">
+      <DependentUpon>statusReportOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\statusReport\statusReportOutput.aspx.designer.cs">
+      <DependentUpon>statusReportOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\crFrequentBreakdown_barChart.cs">
+      <DependentUpon>crFrequentBreakdown_barChart.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\crFrequentBreakdown_pieChart.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crFrequentBreakdown_pieChart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\DataSetFrequentBreakdown.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFrequentBreakdown.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\frequentBreakdownMain.aspx.cs">
+      <DependentUpon>frequentBreakdownMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\frequentBreakdownMain.aspx.designer.cs">
+      <DependentUpon>frequentBreakdownMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\frequentBreakdownOutput.aspx.cs">
+      <DependentUpon>frequentBreakdownOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\frequentBreakdownOutput.aspx.designer.cs">
+      <DependentUpon>frequentBreakdownOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\mainTopFreqDown.aspx.cs">
+      <DependentUpon>mainTopFreqDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\mainTopFreqDown.aspx.designer.cs">
+      <DependentUpon>mainTopFreqDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\topFreqDownOutput.aspx.cs">
+      <DependentUpon>topFreqDownOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\topFreqDownOutput.aspx.designer.cs">
+      <DependentUpon>topFreqDownOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\topFrequentDown_barChart.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>topFrequentDown_barChart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="views\reports\topFrequentBreakdown\topFrequentDown_pieChart.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>topFrequentDown_pieChart.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="views\reports\upDowntime\crUpDownTime.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crUpDownTime.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\reports\upDowntime\DataSetUpDownTime.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUpDownTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\upDowntime\upDownTimeMain.aspx.cs">
+      <DependentUpon>upDownTimeMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\upDowntime\upDownTimeMain.aspx.designer.cs">
+      <DependentUpon>upDownTimeMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\reports\upDowntime\upDownTimeOutput.aspx.cs">
+      <DependentUpon>upDownTimeOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\reports\upDowntime\upDownTimeOutput.aspx.designer.cs">
+      <DependentUpon>upDownTimeOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\tasklist.aspx.cs">
+      <DependentUpon>tasklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\tasklist.aspx.designer.cs">
+      <DependentUpon>tasklist.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="components\fonts\fontawesome-webfont.eot" />
+    <Content Include="components\fonts\fontawesome-webfont.ttf" />
+    <Content Include="components\fonts\fontawesome-webfont.woff" />
+    <Content Include="components\fonts\FontAwesome.otf" />
+    <Content Include="components\bootstrap3\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="components\bootstrap3\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="components\bootstrap3\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\MaestroProfile.pubxml" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="SimpleReports.rpt" />
+    <Content Include="views\reports\longestDowntime\DataSetLongestDowntime.xsc">
+      <DependentUpon>DataSetLongestDowntime.xsd</DependentUpon>
+    </Content>
+    <Content Include="views\kioskMaintenance\softwareDistribution\UploadFiles.ashx" />
+    <Content Include="controller\GetDateTime.ashx" />
+    <None Include="views\reports\longestDowntime\DataSetLongestDowntime.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetLongestDowntime.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="views\reports\longestDowntime\DataSetLongestDowntime.xss">
+      <DependentUpon>DataSetLongestDowntime.xsd</DependentUpon>
+    </Content>
+    <Content Include="views\reports\upDowntime\DataSetUpDownTime.xsc">
+      <DependentUpon>DataSetUpDownTime.xsd</DependentUpon>
+    </Content>
+    <Content Include="views\reports\performance\DataSetPerformance.xsc">
+      <DependentUpon>DataSetPerformance.xsd</DependentUpon>
+    </Content>
+    <Content Include="views\reports\longestResponse\DataSetLongestResponse.xsc">
+      <DependentUpon>DataSetLongestResponse.xsd</DependentUpon>
+    </Content>
+    <None Include="views\reports\longestResponse\DataSetLongestResponse.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetLongestResponse.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="views\reports\longestResponse\DataSetLongestResponse.xss">
+      <DependentUpon>DataSetLongestResponse.xsd</DependentUpon>
+    </Content>
+    <None Include="views\reports\performance\DataSetPerformance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPerformance.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="views\reports\performance\DataSetPerformance.xss">
+      <DependentUpon>DataSetPerformance.xsd</DependentUpon>
+    </Content>
+    <Content Include="views\reports\statusReport\DataSetMachStatus.xsc">
+      <DependentUpon>DataSetMachStatus.xsd</DependentUpon>
+    </Content>
+    <None Include="views\reports\statusReport\DataSetMachStatus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMachStatus.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="views\reports\statusReport\DataSetMachStatus.xss">
+      <DependentUpon>DataSetMachStatus.xsd</DependentUpon>
+    </Content>
+    <Content Include="views\reports\topFrequentBreakdown\DataSetFrequentBreakdown.xsc">
+      <DependentUpon>DataSetFrequentBreakdown.xsd</DependentUpon>
+    </Content>
+    <None Include="views\reports\topFrequentBreakdown\DataSetFrequentBreakdown.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFrequentBreakdown.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="views\reports\topFrequentBreakdown\DataSetFrequentBreakdown.xss">
+      <DependentUpon>DataSetFrequentBreakdown.xsd</DependentUpon>
+    </Content>
+    <None Include="views\reports\upDowntime\DataSetUpDownTime.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUpDownTime.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="views\reports\upDowntime\DataSetUpDownTime.xss">
+      <DependentUpon>DataSetUpDownTime.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Content\" />
+    <Folder Include="views\kioskMaintenance\adsMaintenance\Adv\Default\" />
+    <Folder Include="views\kioskMaintenance\adsMaintenance\Adv\mp4\" />
+    <Folder Include="views\kioskMaintenance\adsMaintenance\Adv\Thumbnail\" />
+    <Folder Include="views\kioskMaintenance\adsMaintenance\Adv\Upload\" />
+    <Folder Include="views\kioskMaintenance\advertisement\Adv\Default\" />
+    <Folder Include="views\kioskMaintenance\advertisement\Adv\Thumbnail\" />
+    <Folder Include="views\kioskMaintenance\advertisement\Adv\Upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\fullKioskList\crFullKioskList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crFullKioskList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\longestDowntime\crLongestDowntime_barChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLongestDowntime_barChart.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\longestDowntime\crLongestDowntime_pieChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLongestDowntime_pieChart.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\longestResponse\crLongestResponse.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLongestResponse.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\longestResponse\crLongestResponse_group.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLongestResponse_group.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\performance\crPerformance_line.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crPerformance_line.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\problemStatistics\mProblemSta_barChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mProblemSta_barChart.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\problemStatistics\mProblemSta_pieChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mProblemSta_pieChart.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\statusReport\crMachStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crMachStatus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\statusReport\mStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mStatus.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\topFrequentBreakdown\crFrequentBreakdown_barChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crFrequentBreakdown_barChart.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\topFrequentBreakdown\crFrequentBreakdown_pieChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crFrequentBreakdown_pieChart.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\topFrequentBreakdown\topFrequentDown_barChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>topFrequentDown_barChart.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\topFrequentBreakdown\topFrequentDown_pieChart.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>topFrequentDown_pieChart.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\reports\upDowntime\crUpDownTime.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUpDownTime.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>3000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
